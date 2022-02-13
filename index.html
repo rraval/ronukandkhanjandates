@@ -2,10 +2,165 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="./style.css"/>
         <title>Ronuk & Khanjan Dates</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Srisakdi:wght@700&display=block" rel="stylesheet">
+
+        <style>
+            html, body {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                display: block;
+                min-height: 100vh;
+            }
+
+            html {
+                font-size: 20px;
+            }
+
+            body {
+                padding: 2em;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            h1, h2 {
+                text-align: center;
+                font-weight: normal;
+                line-height: 1.35;
+            }
+
+            em {
+                font-style: normal;
+            }
+
+            h1 {
+                padding: 0 1.5em;
+                border-top: 3px solid black;
+                border-bottom: 3px solid black;
+
+                font-size: 2rem;
+                font-family: 'Srisakdi', cursive;
+            }
+
+            h1 em {
+                display: block;
+                font-family: 'Fredericka the Great', cursive;
+                font-size: 3rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+                font-family: 'Srisakdi', cursive;
+            }
+
+            h2 em {
+                font-family: 'Fredericka the Great', cursive;
+                font-size: 2rem;
+            }
+        </style>
+
+        <script type="text/javascript">
+            (function() {
+                // Agreed upon in the wee hours of 2021-08-11.
+                //
+                // Khanjan paid for our night out at McMullan's and Ronuk counter
+                // offered paying for 48 double dates. Then we added one for some
+                // reason.
+                var targetDates = 49;
+
+                var doneDates = [
+                    "2021-09-17, McMullan's",
+                    "2022-02-04, Tremblant Dinner Chez David",
+                    "2022-02-05, Tremblant Dinner Baril Roulant",
+                    "2022-02-06, Tremblant Snowshoeing + Tubing",
+                    "2022-02-06, Tremblant Dinner La Petite Cachee",
+                    "2022-02-07, Lunch at Shawarma Palace",
+                ].length;
+
+                var deadline = new Date(2022, 9, 10);
+                var today = new Date();
+
+                var DAYS_IN_MILLISECONDS = 1000 * 60 * 60 * 24;
+                var daysToGo = (deadline - today) / DAYS_IN_MILLISECONDS;
+                var weeksToGo = daysToGo / 7;
+                var requiredDatesPerWeek = (targetDates - doneDates) / weeksToGo;
+
+                function text(str) {
+                    return document.createTextNode(str);
+                }
+
+                function html(tag, children) {
+                    var elem = document.createElement(tag);
+                    for (var i = 0; i < children.length; ++i) {
+                        elem.appendChild(children[i]);
+                    }
+                    return elem;
+                }
+
+                function fractionize(num) {
+                    var floor = Math.floor(num);
+
+                    var options = [
+                        ["" + floor, floor],
+                        ["" + floor + "¼", floor + 0.25],
+                        ["" + floor + "½", floor + 0.5],
+                        ["" + floor + "¾", floor + 0.75],
+                        ["" + (floor + 1), floor + 1],
+                    ];
+
+                    var closest = options[0];
+                    for (var i = 1; i < options.length; ++i) {
+                        var candidate = options[i];
+
+                        var closestError = Math.abs(num - closest[1]);
+                        var candidateError = Math.abs(num - candidate[1]);
+
+                        if (candidateError < closestError) {
+                            closest = candidate;
+                        }
+                    }
+
+                    return closest[0];
+                }
+
+                document.addEventListener("DOMContentLoaded", function() {
+                    var body = document.querySelector("body");
+
+                    body.appendChild(
+                        html("h2", [
+                            html("em", [text("" + doneDates)]),
+                            text(" out of "),
+                            html("em", [text("" + targetDates)]),
+                            text(" dates completed"),
+                        ])
+                    );
+
+                    body.appendChild(
+                        html("h2", [
+                            html("em", [text("" + Math.floor(daysToGo))]),
+                            text(" days to go"),
+                        ]),
+                    );
+
+                    body.appendChild(
+                        html("h2", [
+                            text("requires "),
+                            html("em", [text(fractionize(requiredDatesPerWeek))]),
+                            text(" dates per week"),
+                        ]),
+                    );
+                });
+            })();
+        </script>
     </head>
     <body>
-        <h1>Hello world</h1>
+        <h1><em>Ronuk</em>&<em style="margin-top: -12px">Khanjan</em>dates</h1>
     </body>
 </html>
