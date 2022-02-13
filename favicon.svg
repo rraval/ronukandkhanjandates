@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 8.4666665 8.4666669"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="favicon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     width="793.70081px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showguides="false"
+     inkscape:zoom="16.440181"
+     inkscape:cx="23.20534"
+     inkscape:cy="10.918371"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid7260" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-84.20651,-103.81314)">
+    <text
+       xml:space="preserve"
+       style="font-size:5.60793px;line-height:1.25;font-family:'Fredericka the Great';-inkscape-font-specification:'Fredericka the Great';stroke-width:0.140199"
+       x="84.377846"
+       y="108.02457"
+       id="text3488"><tspan
+         sodipodi:role="line"
+         id="tspan3486"
+         style="stroke-width:0.140199"
+         x="84.377846"
+         y="108.02457">R</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.50019px;line-height:1.25;font-family:'Fredericka the Great';-inkscape-font-specification:'Fredericka the Great';stroke-width:0.137505"
+       x="88.015205"
+       y="112.20921"
+       id="text4614"><tspan
+         sodipodi:role="line"
+         id="tspan4612"
+         style="stroke-width:0.137505"
+         x="88.015205"
+         y="112.20921">K</tspan></text>
+    <path
+       style="fill:none;stroke:#595959;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 89.498177,105.13606 h 1.852083 v 1.85209"
+       id="path6965"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#595959;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 87.38151,110.95689 H 85.529427 V 109.1048"
+       id="path7653"
+       sodipodi:nodetypes="ccc" />
+  </g>
+</svg>
